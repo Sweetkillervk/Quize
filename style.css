@@ -1,0 +1,202 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+/* Global Styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #b8c6db;
+  background-image: url(webbk.jpg); /* Replace with your desired background image */
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  transition: 2s ease;
+}
+
+.quiz-container {
+  width: 500px;
+  padding: 20px;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  background: url(bk1.jpg); /* Replace with your desired background image */
+  background-color: rgb(245, 245, 245);
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Login Form */
+#loginForm {
+  text-align: left;
+  width: 500px;
+  padding: 20px;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  background: url(bk1.jpg); /* Replace with your desired background image */
+  background-color: rgb(245, 245, 245);
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#loginForm h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: red;
+  text-align: center;
+  font-family: Algerian;
+}
+
+#studentForm input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 3rem;
+  border-radius: 5px;
+  border: 2px solid greenyellow;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-family: Algerian, sans-serif;
+  color: rgb(0, 4, 255);
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #24f309;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e400be;
+  color: beige;
+}
+
+button:focus {
+  outline: none;
+  background-color: #44b927;
+}
+
+/* Quiz Section */
+#quizSection {
+  display: none;
+}
+
+.quiz-header {
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin: 20px 0;
+  color: #333;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+  text-align: left;
+}
+
+ul li {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+ul li label {
+  cursor: pointer;
+}
+
+.answer {
+  margin-right: 10px;
+}
+
+/* Marksheet Section */
+#marksheet {
+  display: none;
+  text-align: center;
+  color: black;
+  font-family: Arial, sans-serif;
+  background: url(bk2.jpg); /* Replace with your desired background image */
+  background-color: rgb(245, 245, 245, 0.2);
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#marksheet h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: red;
+  font-family: Algerian;
+}
+
+#marksheet p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+#marksheet button {
+  width: auto;
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-family: Algerian, sans-serif;
+  color: rgb(0, 4, 255);
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #24f309;
+}
+
+#marksheet button:hover {
+  background-color: #e400be;
+  color: beige;
+}
+
+#marksheet button:focus {
+  outline: none;
+  background-color: #44b927;
+}
+
+/* Animation */
+@keyframes abtn {
+  0% {
+    box-shadow: 0px 0px 10px 5px rgb(255, 0, 191);
+    transform: rotate(1deg);
+  }
+  25% {
+    box-shadow: 0px 0px 10px 5px rgb(255, 0, 0);
+    transform: rotate(-1deg);
+  }
+  50% {
+    box-shadow: 0px 0px 10px 5px rgb(251, 255, 0);
+    transform: rotate(1deg);
+  }
+  75% {
+    box-shadow: 0px 0px 10px 5px rgb(30, 255, 0);
+    transform: rotate(-1deg);
+  }
+  100% {
+    box-shadow: 0px 0px 10px 5px rgb(255, 0, 242);
+    transform: rotate(1deg);
+  }
+}
+
+.quiz-container:hover {
+  background-color: rgb(0, 4, 255, 0.2)
+}
